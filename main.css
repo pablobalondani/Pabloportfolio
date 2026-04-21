@@ -1,19 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   line-height: no;
-  font-family: "poppins", sans-serif;
+  font-family: 'poppins', sans-serif;
   color: white;
   text-decoration: none;
 }
 
-html {
+html,
+body {
   scroll-behavior: smooth;
+  scroll-padding: 100px;
 }
 body {
-  /* background: linear-gradient(135deg, #1a0033, #25004d); */
   background: radial-gradient(circle, #1f4f96, #1b2949, #000);
 }
 
@@ -45,6 +46,7 @@ header {
   padding: 15px;
   display: flex;
   gap: 2rem;
+  font-size: 20px;
 }
 
 .navbar a:hover {
@@ -106,7 +108,7 @@ span {
 
 .btn {
   width: 14rem;
-  height: 4.5rem;
+  height: 4rem;
   border-radius: 5px;
   background: linear-gradient(90deg, #8a2be2, #3b82f6);
   padding: 16px 32px;
@@ -156,7 +158,7 @@ span {
 /* ------------------------------ SECTION A  PROPRO -------------------------- */
 .propos {
   text-align: center;
-  padding-bottom: -2rem;
+  padding-top: 7rem;
 }
 
 .image2 {
@@ -251,7 +253,7 @@ span {
 
 .front {
   background-color: #1f4f96;
-  background-color: ;
+  background-color:;
   border: solid none;
   width: 35rem;
   height: 25rem;
@@ -269,24 +271,6 @@ span {
   padding-bottom: 20px;
 }
 
-.pourcentage {
-  margin-left: 18rem;
-  font-size: 20px;
-  color: white;
-}
-
-.pourcentages {
-  margin-left: 19.2rem;
-  font-size: 20px;
-  color: white;
-}
-
-.pourcentagee {
-  margin-left: 13rem;
-  font-size: 20px;
-  color: white;
-}
-
 .cs {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -295,11 +279,6 @@ span {
 .jav {
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.next {
-  margin-left: 18.5rem;
-  font-size: 20px;
 }
 
 .outil {
@@ -323,17 +302,6 @@ span {
 
 .linux {
   padding: 2rem;
-}
-
-.pourcentagess {
-  margin-left: 22rem;
-  font-size: 20px;
-  margin-top: 2rem;
-}
-
-.pourcent {
-  margin-left: 19rem;
-  font-size: 20px;
 }
 
 .win {
@@ -361,42 +329,44 @@ span {
   gap: 2rem;
 }
 
-.flex1 {
+.flex1,
+.flex2,
+.flex3,
+.flex4,
+.flex5,
+.flex6 {
   max-width: 30rem;
   border-radius: 15px;
   padding: 5px;
   padding-top: 2rem;
 }
 
-.flex1:hover {
+.flex1:hover,
+.flex2:hover,
+.flex3:hover,
+.flex4:hover,
+.flex5:hover,
+.flex6:hover {
   transform: scale(1.02);
 }
 
 .tof {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
+  margin-bottom: -6px;
 }
 
 .book {
-  background-color: #1b294991;
+  background-color: #1b2949;
   min-height: 15rem;
   padding: 15px;
-}
-
-.flex2 {
-  max-width: 30rem;
-  border-radius: 15px;
-  padding-top: 2rem;
-}
-
-.flex2:hover {
-  transform: scale(1.02);
 }
 
 .tofs {
   width: 100%;
   height: 16rem;
   border-radius: 1rem 1rem 0 0;
+  margin-bottom: -6px;
 }
 
 .easy {
@@ -405,22 +375,11 @@ span {
   padding: 15px;
 }
 
-.flex3 {
-  border: solid none;
-  width: 30rem;
-  border-radius: 15px;
-  padding: 5px;
-  padding-top: 2rem;
-}
-
-.flex3:hover {
-  transform: scale(1.02);
-}
-
 .tofo {
   width: 100%;
   border-radius: 1rem 1rem 0 0;
   height: 16rem;
+  margin-bottom: -6px;
 }
 
 .ecom {
@@ -429,22 +388,11 @@ span {
   padding: 15px;
 }
 
-.flex4 {
-  border: solid none;
-  width: 30rem;
-  border-radius: 15px;
-  padding: 5px;
-  padding-top: 2rem;
-}
-
-.flex4:hover {
-  transform: scale(1.02);
-}
-
 .tofos {
   width: 100%;
   height: 16rem;
   border-radius: 1rem 1rem 0 0;
+  margin-bottom: -6px;
 }
 
 .snap {
@@ -453,22 +401,11 @@ span {
   padding: 15px;
 }
 
-.flex5 {
-  border: solid none;
-  width: 30rem;
-  border-radius: 15px;
-  padding: 5px;
-  padding-top: 2rem;
-}
-
-.flex5:hover {
-  transform: scale(1.02);
-}
-
 .tofa {
   width: 100%;
   height: 16rem;
   border-radius: 1rem 1rem 0 0;
+  margin-bottom: -6px;
 }
 
 .blog {
@@ -477,21 +414,11 @@ span {
   padding: 15px;
 }
 
-.flex6 {
-  border: solid none;
-  width: 30rem;
-  border-radius: 15px;
-  padding-top: 2rem;
-}
-
-.flex6:hover {
-  transform: scale(1.02);
-}
-
 .tofi {
   width: 100%;
   height: 16rem;
   border-radius: 1rem 1rem 0 0;
+  margin-bottom: -6px;
 }
 
 .contas {
@@ -599,7 +526,7 @@ span {
 
 .maps {
   border-radius: 15px;
-  width: max(48.5%);
+  width: max(46.5%);
   height: 25rem;
 }
 
@@ -674,21 +601,11 @@ footer {
 }
 
 /* ------------------- Responsive ------------------- */
-@media (max-width: 480px) {
-  span {
-    font-size: 20px;
+@media (min-width: 320px) and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
   }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  .icons {
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 768px) {
+  /* --------------- NavBar --------------- */
   .navs {
     padding: 15px 20px;
   }
@@ -704,16 +621,28 @@ footer {
     display: none;
   }
 
+  .menu {
+    display: block;
+  }
+
   #menu-toggle:checked + .navbar {
     display: flex;
   }
 
-  .menu {
-    display: block;
+  span {
+    font-size: 20px;
   }
-}
 
-@media (max-width: 768px) {
+  /* --------------- Main --------------- */
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+  }
+
   .images {
     margin: auto;
     display: block;
@@ -727,6 +656,7 @@ footer {
   .btn1 {
     display: flex;
     flex-direction: column;
+    gap: 15px;
     align-items: center;
   }
 
@@ -734,9 +664,37 @@ footer {
   .btns {
     width: 90%;
   }
-}
 
-@media (max-width: 768px) {
+  .flex {
+    height: auto;
+  }
+
+  .flex > div {
+    width: 90%;
+  }
+
+  #competence {
+    margin-top: -8rem;
+  }
+
+  #projet {
+    margin-top: -4rem;
+  }
+
+  .sho {
+    margin-top: -4rem;
+    margin-bottom: -3rem;
+  }
+
+  .sect {
+    margin-top: -15rem;
+    margin-bottom: 1rem;
+  }
+
+  .une {
+    margin-top: -2rem;
+    margin-bottom: -3rem;
+  }
   .ima {
     float: none;
     margin: auto;
@@ -756,13 +714,31 @@ footer {
     height: auto;
   }
 
+  .dev {
+    margin-left: -13px;
+  }
+
+  .creation {
+    margin-bottom: -5rem;
+  }
+
+  .creation p {
+    margin-top: -6rem;
+  }
+
   .creation {
     margin-left: 0;
     margin-top: 1rem;
   }
-}
 
-@media (max-width: 1024px) {
+  #about {
+    margin-top: -3rem;
+  }
+
+  .maps {
+    max-width: 35rem;
+  }
+
   .container {
     flex-direction: column;
     align-items: center;
@@ -773,19 +749,6 @@ footer {
     width: 90%;
     height: auto;
   }
-}
-
-@media (max-width: 768px) {
-  .flex {
-    height: auto;
-  }
-
-  .flex > div {
-    width: 90%;
-  }
-}
-
-@media (max-width: 1024px) {
   .conta {
     margin-left: 0;
     padding: 1rem;
@@ -798,11 +761,17 @@ footer {
 
   .parent {
     position: static;
-    width: 90%;
+    width: 93%;
     margin: 2rem auto;
   }
 
   .bnt {
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024) {
+  body {
+    overflow-x: hidden;
   }
 }
