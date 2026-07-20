@@ -22,7 +22,9 @@ body {
 header {
   padding-bottom: 6rem;
 }
-
+.contenaire {
+  padding: auto;
+}
 .navs {
   background-color: #1a0033;
   position: fixed;
@@ -38,6 +40,7 @@ header {
 }
 
 .pab {
+  padding-top: 5px;
   display: flex;
   gap: 2rem;
 }
@@ -481,7 +484,7 @@ span {
 }
 
 .ico {
-  /* background: linear-gradient(90deg, #8a2be2, #3b82f6); */
+  background: linear-gradient(90deg, #8a2be2, #3b82f6);
   border: 1px solid none;
   border-radius: 5px;
   display: flex;
@@ -621,6 +624,10 @@ footer {
     display: none;
   }
 
+  .pab {
+    padding-top: 25px;
+  }
+
   .menu {
     display: block;
   }
@@ -662,7 +669,7 @@ footer {
 
   .btn,
   .btns {
-    width: 90%;
+    width: 27rem;
   }
 
   .flex {
@@ -770,8 +777,11 @@ footer {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024) {
+@media (min-width: 768px) and (max-width: 1024px) {
   body {
     overflow-x: hidden;
+  }
+
+  .navs {
   }
 }
