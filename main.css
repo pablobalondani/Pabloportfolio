@@ -603,185 +603,424 @@ footer {
   padding-bottom: 3rem;
 }
 
-/* ------------------- Responsive ------------------- */
-@media (min-width: 320px) and (max-width: 768px) {
+/* ------------------- Responsive Design ------------------- */
+
+/* ===== Grands écrans réduits (≤ 1400px) : contact empilé ===== */
+@media (max-width: 1400px) {
+  html,
   body {
     overflow-x: hidden;
   }
-  /* --------------- NavBar --------------- */
-  .navs {
-    padding: 15px 20px;
-  }
-
-  .navbar {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background-color: #1a0033;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-  }
-
-  .pab {
-    padding-top: 25px;
-  }
-
-  .menu {
-    display: block;
-  }
-
-  #menu-toggle:checked + .navbar {
-    display: flex;
-  }
-
-  span {
-    font-size: 20px;
-  }
-
-  /* --------------- Main --------------- */
-
-  h1 {
-    font-size: 22px;
-  }
-
-  .icons {
-    flex-wrap: wrap;
-  }
-
-  .images {
-    margin: auto;
-    display: block;
-    width: 60%;
-  }
-
-  .phrase1 h1 {
-    font-size: 22px;
-  }
-
-  .btn1 {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-
-  .btn,
-  .btns {
-    width: 27rem;
-  }
-
-  .flex {
-    height: auto;
-  }
-
-  .flex > div {
-    width: 90%;
-  }
-
-  #competence {
-    margin-top: -8rem;
-  }
-
-  #projet {
-    margin-top: -4rem;
-  }
-
-  .sho {
-    margin-top: -4rem;
-    margin-bottom: -3rem;
-  }
 
   .sect {
-    margin-top: -15rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 4rem;
   }
 
-  .une {
-    margin-top: -2rem;
-    margin-bottom: -3rem;
-  }
-  .ima {
-    float: none;
-    margin: auto;
-    display: block;
-    width: 90%;
-    padding: 0;
+  .sectwrap {
+    padding: 0 2rem;
   }
 
-  .passionne {
-    margin: 2rem;
-    padding-bottom: 5rem;
-  }
-
-  .deve {
-    width: 100%;
-    flex-direction: column;
-    height: auto;
-  }
-
-  .dev {
-    margin-left: -13px;
-  }
-
-  .creation {
-    margin-bottom: -5rem;
-  }
-
-  .creation p {
-    margin-top: -6rem;
-  }
-
-  .creation {
-    margin-left: 0;
-    margin-top: 1rem;
-  }
-
-  #about {
-    margin-top: -3rem;
-  }
-
-  .maps {
-    max-width: 35rem;
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .front,
-  .outil {
-    width: 90%;
-    height: auto;
-  }
   .conta {
     margin-left: 0;
-    padding: 1rem;
+    max-width: 52rem;
+    margin-inline: auto;
+  }
+
+  .toot1,
+  .toot2,
+  .toot3 {
+    float: none;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .email p,
+  .tels p,
+  .locs p {
+    word-break: break-word;
   }
 
   .maps {
+    display: block;
     width: 100%;
-    margin-top: 2rem;
+    max-width: 52rem;
+    height: 20rem;
+    margin: 2rem auto 0;
   }
 
   .parent {
-    position: static;
-    width: 93%;
-    margin: 2rem auto;
+    margin: 2rem auto 0;
+    width: 90%;
+    max-width: 52rem;
+  }
+
+  .parent input,
+  .parent textarea {
+    width: 100%;
+  }
+
+  .parent textarea {
+    height: 8rem;
+    resize: vertical;
   }
 
   .bnt {
     width: 100%;
   }
-}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  body {
-    overflow-x: hidden;
+  footer {
+    margin-top: 0;
   }
 
+  .pabs {
+    margin-top: 0;
+    line-height: 1.6;
+  }
+
+  .par {
+    padding-bottom: 1rem;
+  }
+}
+
+/* ===== Tablette / petit laptop (≤ 1200px) ===== */
+@media (max-width: 1200px) {
+  /* Navbar */
   .navs {
+    padding: 15px 40px;
+  }
+
+  .navbar {
+    gap: 1.2rem;
+    font-size: 18px;
+  }
+
+  /* Hero */
+  .images {
+    display: block;
+    width: 28%;
+    max-width: 260px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 5rem auto 2rem;
+    padding-bottom: 0;
+  }
+
+  /* About */
+  .ima {
+    margin-left: 2rem;
+    width: 40%;
+    max-height: none;
+    padding: 20px;
+  }
+
+  .passionne {
+    margin-top: 3rem;
+    padding: 0 2rem 6rem 0;
+  }
+
+  .deve {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .dev {
+    margin: 0;
+    padding: 0;
+  }
+
+  .creation {
+    margin: 0;
+  }
+
+  /* Competence */
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .front,
+  .outil {
+    width: 90%;
+    max-width: 40rem;
+    height: auto;
+    min-height: 20rem;
+  }
+
+  .out {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Projets */
+  .pro {
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .my {
+    padding-bottom: 2rem;
+  }
+
+  .flex {
+    height: auto;
+    padding-inline: 1.5rem;
+  }
+
+  .flex1,
+  .flex2,
+  .flex3,
+  .flex4,
+  .flex5,
+  .flex6 {
+    width: calc(50% - 1rem);
+    max-width: none;
+  }
+}
+
+/* ===== Mobile & petite tablette (≤ 768px) ===== */
+@media (max-width: 768px) {
+  /* Navbar + menu burger */
+  .navs {
+    padding: 10px 20px;
+    align-items: center;
+  }
+
+  .pab {
+    padding-top: 0;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .menu {
+    display: block;
+    font-size: 32px;
+    line-height: 1;
+    padding: 4px 8px;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    gap: 0;
+    background-color: #1a0033;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  /* le checkbox est dans .logo, juste avant .navbar */
+  .logo:has(#menu-toggle:checked) + .navbar {
+    display: flex;
+  }
+
+  header {
+    padding-bottom: 5rem;
+  }
+
+  /* Titres / textes */
+  span {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  /* Hero */
+  .images {
+    width: 55%;
+    margin-top: 3rem;
+  }
+
+  .phrase1 {
+    padding: 0 1rem 1.5rem;
+  }
+
+  .btn1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 0 1rem 2rem;
+  }
+
+  .btn,
+  .btns {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-bottom: 2rem;
+  }
+
+  /* About */
+  .propos {
+    padding-top: 3rem;
+  }
+
+  .ima {
+    float: none;
+    display: block;
+    width: 80%;
+    max-width: 22rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .passionne {
+    margin: 2rem 0 0;
+    padding: 0 1.5rem 3rem;
+    text-align: center;
+  }
+
+  .trans br,
+  .transf br {
+    display: none;
+  }
+
+  .trans,
+  .transf {
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .deve {
+    align-items: center;
+    text-align: center;
+  }
+
+  .iconss {
+    flex-shrink: 0;
+  }
+
+  /* Competence */
+  .mes {
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .front {
+    padding: 25px;
+  }
+
+  /* Projets */
+  .pro {
+    padding-top: 3rem;
+  }
+
+  .sho {
+    padding: 0 1.5rem;
+  }
+
+  .flex1,
+  .flex2,
+  .flex3,
+  .flex4,
+  .flex5,
+  .flex6 {
+    width: 100%;
+    max-width: 30rem;
+  }
+
+  /* Contact */
+  .sect {
+    padding-top: 3rem;
+  }
+
+  .cont {
+    padding-bottom: 1.5rem;
+  }
+
+  .une {
+    padding-bottom: 2rem;
+  }
+
+  .sectwrap {
+    padding: 0 1rem;
+  }
+
+  .toot1,
+  .toot2,
+  .toot3 {
+    padding: 12px;
+  }
+
+  .maps {
+    height: 16rem;
+  }
+
+  .parent {
+    width: 92%;
+    padding: 1.5rem;
+  }
+}
+
+/* ===== Petits téléphones (≤ 480px) ===== */
+@media (max-width: 480px) {
+  .navs {
+    padding: 10px 15px;
+  }
+
+  .images {
+    width: 65%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  span {
+    font-size: 18px;
+  }
+
+  .btn,
+  .btns {
+    font-size: 18px;
+  }
+
+  .ima {
+    width: 90%;
+  }
+
+  .email,
+  .tels,
+  .locs {
+    margin-left: 4.5rem;
+  }
+
+  .email p,
+  .tels p,
+  .locs p {
+    font-size: 14px;
+  }
+
+  .front,
+  .outil {
+    width: 94%;
+  }
+
+  .parent {
+    padding: 1.2rem;
   }
 }
